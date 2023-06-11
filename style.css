@@ -1,0 +1,788 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #2d2d2d;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Navigation bar done**************************************************************************************************************************************************/
+
+.menu-btn{
+    cursor: pointer;
+    position: fixed;
+    color: white;
+    top:20px;
+    right:50px;
+    z-index: 2;
+    display: none;
+}  /*this is hamburger menu*/
+
+.menu-expanded{
+    position: fixed;
+    height: 50vh;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.nav-container{
+    position: fixed;
+    width: 100%;
+    margin: auto;
+    height: 80px;
+    background-color: black;
+}  
+
+.main-nav{
+    position: fixed;
+    width: 90%;
+    left: 70px;  
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 10px 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.main-nav .logo{
+    width: 210px;
+}
+
+.main-nav ul{
+    display: flex;
+}
+
+.main-nav ul li a{
+    color: #c4c8cc;
+    margin: 0 15px;
+}
+
+
+.underline:hover{
+    border-bottom: 4px solid #FA892D;
+    border-radius: 3px;
+    padding-bottom: 30px;
+}
+
+
+.main-nav ul.main-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.btn{
+    background-color: #81C5F8;
+    color: #000000 !important;
+    border: 1px solid #81C5F8;
+    border-radius: 5px;
+    padding: 9px;
+}
+
+.btn:hover{
+    background-color: #96dbf0;
+}
+
+/* Navigation bar done**************************************************************************************************************************************************/
+
+/*Hero text start********************************************************************************************************************************************************/
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    height: 100vh;
+}
+
+
+.hero-image{
+    margin: 15% 0 5%;
+    background: url(bg-header-desktop.png)
+    no-repeat center center/cover;
+}
+
+.hero-text{
+    padding: 50px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-text h3{
+    color: #9FA6AD;
+    font-family: 'Roboto Slab', serif;
+    font-size: 19px;
+}
+
+.hero-text h1{
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-size: 43px;
+}
+
+.hero-text p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: #BFC8CC;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+/*Hero section done**********************************************************************************************************************************************/
+
+/****************INFO section*************************************************************************************************************************************/
+.info{
+    width: 90%;
+    margin:2% auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 0.75fr 1.25fr 1fr;
+}
+
+.stats{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    grid-column: 1/3;
+    grid-row: 1/2;
+    background-color: #282727;
+    border: 2px #282727 solid;
+    border-radius: 10px;
+}
+
+.stats-number{
+    word-wrap: break-word;
+    padding: 0 5%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-right: 2px grey solid; 
+}
+
+.stats-number h4{
+    font-family: 'Roboto Slab', serif;
+    font-size: 19px;
+    font-weight:900;
+    color: white;
+}
+
+
+.stats-number p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    color: white;
+    font-weight: lighter;
+}
+
+.no-border{
+    border:0px #f2f2f2 solid;
+}
+
+.para-first{
+    grid-column: 1/2;
+    grid-row:2/3;
+}
+
+.para-second{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.para-text{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    color: white;
+    margin: 10% 15%;
+    line-height: 28.5px;
+    font-weight: lighter;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.awards{
+    grid-row: 3/4;
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.awards-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    font-weight: lighter;
+    margin: 0% 2%;
+}
+
+.awards-logo img{
+    width: 75px;
+    margin: 20px 10px;
+}
+
+/****************************************AWARDS OVER*********************************************************************************************************************/
+
+.section-2{
+    background: #282727;
+    padding: 1% 0;
+}
+
+.our-product{
+    display: grid;
+    gap: 20px;
+    width: 70%;
+    margin: 5% auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr 1fr 1fr;
+}
+
+.prodcut-heading{
+    grid-column: 1/3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    color: white;
+}
+
+.product-img{
+    width: 50px;
+}
+
+.our-product h1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 20px;
+}
+
+.card-header{
+    background-color: #233E52;
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    border:2px #25465F solid;
+    border-radius: 20px;
+    
+}
+
+.card-header h1{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.card-header p{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif !important;
+    font-weight:400;
+}
+
+.card-header a{
+    font-size: 15px;
+    color: white;
+    border: 2px #328dd2 solid;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: #328dd2;
+}
+
+.card-info{
+    display: grid;
+    background: #233E52;
+    grid-template-columns: 1fr 1fr;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    border: 2px #233E52 solid;
+    border-radius: 10px;
+}
+
+.card-info h5{
+    font-size: 19px;
+}
+
+.card-info p{
+    font-size: 15px;
+    width: 100%;
+}
+.card-info-logo{
+    padding: 5% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:start;
+}
+
+
+.card-info-logo img{
+    width: 50px;
+}
+
+.card-info-logo a{
+    font-size: 15px;
+    color: white;
+    border: 2px #328dd2 solid;
+    border-radius: 10px;
+    padding: 5px 20px;
+    background-color: #328dd2;  
+}
+
+.card-image{
+    width: 100%;
+    background: url(abstract-teams.png) 
+    no-repeat center center/cover;
+    margin: 3% 0;
+}
+
+/***********CARDS DONE********************************************************************************************************************************************/
+/***************USED BY ORGANIZATION*********************************************************************************************************************/
+.usedBy-organization{
+    width: 70%;
+    margin: 10% auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.usedBy-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    padding: 4% 0;
+
+
+}
+
+.usedBy-marquee{
+    display: flex;
+    justify-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+
+.usedBy-marquee img{
+    width: 200px;
+    padding: 5px 30px;
+    fill: red;
+    animation: move-rtl 6000ms linear infinite;
+}
+
+@keyframes move-rtl{
+    0%{
+        transform: translateX(0);
+    }
+
+    100%{
+        transform: translateX(-100%)
+    }
+}
+
+/***************USED BY ORGANIZATION*********************************************************************************************************************/
+
+/***********************Values************************************************************************************************************************/
+
+.values-grid{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 0.5fr 1fr 1fr;
+    gap: 40px;
+}
+
+.values-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/4;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+    font-weight:bold;
+    font-size: 30px;
+    padding: 5%;
+}
+
+.values-text i{
+    font-size: 40px;
+    color: orange;
+    
+}
+
+.values-text h2{
+    font-family: 'Roboto Slab', serif;
+    color: #c4c8cc;
+    margin: 5% 0;
+}
+
+.values-text p{
+    font-family: 'Roboto Slab', serif;
+    color: #c4c8cc;
+}
+
+/******************************************************************Values over*************************************************************************************/
+
+/******************************************************************Work section start******************************************************************************/
+
+.work-text{
+    margin: 8% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-text h1{
+    font-family: 'Roboto Slab', serif;
+    color: #c4c8cc;
+    font-size: 25px;
+    padding: 3% 0;
+}
+
+.work-text p{
+    font-family: 'Roboto Slab', serif;
+    color: #c4c8cc;
+    font-size: 15px;
+    width: auto;
+}
+
+.work-btn{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-btn a{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding: 2% 5%;
+    margin: 5% 1%;
+}
+
+.work-job-opening{
+    font-weight: bold;
+    border-radius: 10px;
+    background-color: #33A7FF;
+}
+
+.work-contact-us{
+    border-radius: 10px;
+    background-color: #435460;
+    font-weight: bold;
+}
+
+/*************************************************WORK OVER************************************************************************/
+
+.faq{
+    background-color: #D9DDE0;
+}
+
+.faq-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.faq-card{
+    margin: 30% 0;
+}
+
+.faq-card i{
+    color: rgb(73, 69, 69);
+    font-size: 50px;
+}
+
+.faq-card p{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.faq-card a{
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    color: black;
+    padding: 2% 5%;
+    border: 2px orange solid;
+    border-radius: 10px;
+    background-color: orange;
+}
+
+/**********************************************************FAQ OVER****************************************************************************************************/
+/************************************************************FOOTER  DONE********************************************************************************************/
+.links-inner{
+    margin: 5% auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.links-inner ul img{
+    width: 60px;
+}
+
+.links-inner ul li h3{
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0% 0% 7% 0;
+    color: #696F75;
+    font-size: 15px;
+}
+
+.links-inner ul li a{
+    text-transform: capitalize;
+    font-family: 'Ubuntu', sans-serif;
+    color: #C4C8CC;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.links-inner ul li a:hover{
+    color: grey;
+}
+
+/*************************************************************FOOTER OVER************************************************************************************/
+
+
+/*************************************************************MEDIA QUERIES************************************************************************************/
+
+@media(max-width:970px){
+
+    
+    .menu-btn{
+        display: block;
+    }
+
+    .main-nav ul{
+        display: none;
+    }
+
+
+    .hero{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+        height: 100%;
+    }
+
+    .hero-image{
+        margin: 15% 0 5%;
+        background: url(bg-header-mobile.png)
+        no-repeat center center/cover;
+    }
+
+    /****************************************************************************************************Hero over********************************/
+    /***************************************INFO START*********************************************************************************************/
+    .info{
+        grid-template-columns: 0;
+        grid-template-rows: 2fr 0.5fr 0.5fr 0.5fr;
+    }
+    
+    .stats{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content:space-around;
+        background-color: #282727;
+        border: 2px #282727 solid;
+        border-radius: 10px;
+        height: 100%;
+    }
+
+    .stats-number{
+        padding: 10%;
+        border-bottom: 2px grey solid; 
+        border-right: 0px;
+    }
+
+    .no-border{
+        border-bottom: 0px;
+    }
+
+    .para-first{
+        grid-column: 1/3;
+        grid-row:2/3;
+    }
+    
+    .para-second{
+        grid-row: 3/4; 
+    }
+
+    .awards{
+        grid-row: 4/5;
+    }
+
+    /*****************************************************************INFO OVER************************************************************************/
+    /******************************************************************PRODUCTS*********************************************************************/
+
+    .our-product{
+        display: grid;
+        gap: 20px;
+        width: 70%;
+        margin: 5% auto;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr; 
+    }
+
+    .prodcut-heading{
+        grid-column: 1/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto Slab', serif;
+        font-size: 13px;
+        color: white;
+    }
+
+    .card-header{
+        background-color: #233E52;
+        grid-column:0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto Slab', serif;
+        color: white;
+        border:2px #25465F solid;
+        border-radius: 20px;
+        padding-bottom: 10px;
+    }
+
+    .card-info{
+        grid-column: 1/3;
+    }
+
+    /***********************************************************************************Product Cards done**********************************************************/
+
+    /**********************************************************************************FAQ section****************************************************************/
+
+    .faq-grid{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+        gap: 40px;
+        width: 80%;
+        margin: 0 auto;
+
+    }
+
+    .faq-card{
+        margin: 6% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        grid-column: 1/4;
+    }
+    
+}
+
+/***************************MEDIA QUERY 970px DONE**************************/
+/***************************MEDIA QUERY 640px START**********************************************************************************/
+
+@media(max-width:640px){
+
+    /*Values*********************************************************************/
+
+    .values-grid{
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 40px;
+    }
+
+    .values-heading{
+        grid-column: 1/2;
+    }
+
+    /*****************VALUES DONE***************************************************/
+
+    /******************FOOTER DONE*************************************************/
+    .links-inner{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.5fr 1fr 1fr;
+    }
+
+    .link-img{
+        width: 60px;
+        grid-column: 1/3;
+    }
+
+    /*******************FOOTER DONE**************************************************/
+
+    /******************CARDS*************************************/
+
+    .card-image{
+        width: 0;
+    }
+
+    .card-info{
+        grid-template-columns: 1fr;
+    }
+
+    .card-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0% 10%;   
+    }
+
+    /*********************************************************CARDS DONE******************************/
+
+    /***********************************************WORK**********************************************/
+    .work-text p{
+        width: 60%;
+        text-align: center;
+    }
+
+    .work-btn a{
+        padding: 3% 5%;
+        margin: 5% 1%;
+    }
+    /***********************************************WORK DONE**********************************************/
+}
+
+
+
+
+
+
+
+
+
+
+
+
